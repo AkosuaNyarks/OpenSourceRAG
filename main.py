@@ -24,7 +24,7 @@ def main():
     query_engine=get_query_engine(retriever,llm)
 
     #Ask a question
-    question = "When was Nvidia founded, and by whom?"
+    question = "When was Apple founded, and by whom?"
 
 
     response=query_engine.query(question)
