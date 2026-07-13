@@ -1,17 +1,30 @@
-from llama_index.core import SimpleDirectoryReader
+from llama_index.core import Document, SimpleDirectoryReader
+from llama_index.core.readers.base import BaseReader
 from llama_index.readers.file import PyMuPDFReader
 
 
-def load_documents():
+
+def load_documents(input_dir:str='data/raw') -> list[Document]:
+
+    """
+    Load documents from a directory using PyMuPDF for PDF files
+
+    Args:
+        input_dir=Path to the directory containing the source files
+
+    Returns:
+        A list of the loaded documents 
+    
+    """
 
     parser=PyMuPDFReader() # create an instance(Object) of the PyMuPDFReader
 
     #File extractor dictionaary
-    file_extractor= {".pdf":parser}
+    file_extractor:dict[str, BaseReader]= {".pdf":parser}
 
     # Create an instance of the SimpleDirectoryReader
     reader=SimpleDirectoryReader(
-        input_dir='data/raw', # path to the directory
+        input_dir=input_dir, # path to the directory
         filename_as_id=True,#Use the file name as document id
         file_extractor=file_extractor
     )
