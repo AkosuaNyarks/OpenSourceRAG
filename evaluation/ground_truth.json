@@ -1,0 +1,128 @@
+[
+    {
+      "id": "q01",
+      "question": "What are the three main paradigms in the evolution of RAG research?",
+      "ground_truth": "Naive RAG, Advanced RAG, and Modular RAG.",
+      "source_document": "RAG_Generation_For_LLM.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q02",
+      "question": "What are the three core technical components of a RAG framework?",
+      "ground_truth": "Retrieval, Generation, and Augmentation.",
+      "source_document": "RAG_Generation_For_LLM.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q03",
+      "question": "What alternative name is used for the Naive RAG process?",
+      "ground_truth": "The 'Retrieve-Read' framework.",
+      "source_document": "RAG_Generation_For_LLM.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q04",
+      "question": "What three steps make up the Naive RAG pipeline?",
+      "ground_truth": "Indexing, retrieval, and generation.",
+      "source_document": "RAG_Generation_For_LLM.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q05",
+      "question": "What is the 'Lost in the middle' problem referenced in the RAG survey?",
+      "ground_truth": "LLMs tend to focus mainly on the beginning and end of long input texts while forgetting or underusing information in the middle portion.",
+      "source_document": "RAG_Generation_For_LLM.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q06",
+      "question": "Name two adaptive retrieval methods discussed in the RAG survey.",
+      "ground_truth": "FLARE and Self-RAG.",
+      "source_document": "RAG_Generation_For_LLM.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q07",
+      "question": "What three quality scores are central to RAG evaluation according to the survey?",
+      "ground_truth": "Context relevance, answer faithfulness, and answer relevance.",
+      "source_document": "RAG_Generation_For_LLM.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q08",
+      "question": "What does the acronym DF-RAG stand for?",
+      "ground_truth": "Diversity-Focused Retrieval-Augmented Generation.",
+      "source_document": "Df-RAG.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q09",
+      "question": "What established retrieval technique does DF-RAG's gMMR function build upon?",
+      "ground_truth": "Maximal Marginal Relevance (MMR).",
+      "source_document": "Df-RAG.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q10",
+      "question": "What hyperparameter controls the trade-off between relevance and diversity in DF-RAG's gMMR scoring function?",
+      "ground_truth": "Lambda (λ).",
+      "source_document": "Df-RAG.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q11",
+      "question": "Which two backbone LLMs were used in DF-RAG's experiments?",
+      "ground_truth": "Qwen 2.5 72B and Llama 3.3 70B.",
+      "source_document": "Df-RAG.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q12",
+      "question": "Which five QA datasets were used to evaluate DF-RAG?",
+      "ground_truth": "HotpotQA, MuSiQue, 2WikiMultihopQA, MultifieldQA (English), and En.QA.",
+      "source_document": "Df-RAG.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q13",
+      "question": "What computational complexity does DF-RAG's proposed binary-search-based sampling strategy achieve, compared to uniform sampling?",
+      "ground_truth": "O(log n) complexity, compared to O(n) for uniform sampling, with comparable performance.",
+      "source_document": "Df-RAG.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q14",
+      "question": "What is the core architectural innovation of Landmark Embedding?",
+      "ground_truth": "A chunking-free architecture that appends a special landmark (LMK) token to the end of each sentence and jointly encodes it with the coherent surrounding context, instead of splitting text into disconnected chunks.",
+      "source_document": "Landmark_Embedding.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q15",
+      "question": "What backbone model is Landmark Embedding built on, and what technique extends its context window to 32K tokens?",
+      "ground_truth": "LLaMA-2-7B, extended to 32K context using LongLoRA.",
+      "source_document": "Landmark_Embedding.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q16",
+      "question": "What are the three stages of Landmark Embedding's multi-stage learning algorithm?",
+      "ground_truth": "1) Distant supervision using pairwise MS MARCO data, 2) weak supervision using shuffled and merged pseudo long documents, and 3) fine-tuning on synthetic long-document data generated with an LLM.",
+      "source_document": "Landmark_Embedding.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q17",
+      "question": "What mechanism allows Landmark Embedding to process input longer than the LLM's context window?",
+      "ground_truth": "A sliding window that streams and processes the long context incrementally.",
+      "source_document": "Landmark_Embedding.pdf",
+      "type": "single-hop"
+    },
+    {
+      "id": "q18",
+      "question": "What is the role of DF-RAG's 'Tie-Breaking Gate'?",
+      "ground_truth": "When the Evaluator scores multiple lambda values as equally optimal, the Tie-Breaking Gate selects a single chunk set by choosing the median (or upper median) lambda among the tied candidates.",
+      "source_document": "Df-RAG.pdf",
+      "type": "single-hop"
+    }
+  ]
