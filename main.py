@@ -4,27 +4,21 @@ from indexing.build_index import build_index
 from retrieval.retriever import  get_retriever
 from llm.llm_factory import get_llm
 from retrieval.query_engine import get_query_engine
-def main():
-    # 1. Load the documents
+def main()-> None:
+    # Load the documents
     load_docs=load_documents()
 
-    #2.Split the documents into nodes
+    #Split the documents into nodes
     nodes=split_documents(load_docs)
 
-    #3. Build an index for the nodes and store in ChromaDB
+    #Build an index for the nodes and store in ChromaDB
     index=build_index(nodes)
 
-    #4. Create a retriever to retrieve the data  that...
-    retriever=get_retriever(index)
-
-    #5. Setup the LLM model
-    llm=get_llm()
-
-    #6.send the retriver and the llm to the query engine
-    query_engine=get_query_engine(retriever,llm)
+  
+    query_engine=get_query_engine(get_retriever(index),get_llm())
 
     #Ask a question
-    question = "When was Apple founded, and by whom?"
+    question = "What was Nvidia's net income in fiscal year 2020 vs 2026?"
 
 
     response=query_engine.query(question)
