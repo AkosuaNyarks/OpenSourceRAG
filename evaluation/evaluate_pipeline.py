@@ -43,8 +43,7 @@ def run_eval_set(query_engine:RetrieverQueryEngine,golden_set:list[dict],output_
                 "source_document": item.get("source_document"),
             }
             records.append(record)
-            f.write(json.dumps(record, indent=2)+ "\n")
-
+            f.write(json.dumps(record)+ "\n")
             print(f"[{item['id']}] done — retrieved {len(contexts)} chunks")
 
     return records

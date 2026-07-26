@@ -1,7 +1,10 @@
 import os
-from openai import OpenAI
-from ragas.llms import llm_factory
+from langchain_openai import ChatOpenAI
+from ragas.llms import LangchainLLMWrapper
 
 def get_judge_llm():
-    pass
-   
+    chat_model = ChatOpenAI(
+        model="gpt-4o-mini",
+        api_key=os.environ.get("OPENAI_API_KEY"),
+    )
+    return LangchainLLMWrapper(chat_model)
