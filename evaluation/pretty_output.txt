@@ -607,7 +607,7 @@ employ established metrics suitable to the tasks at hand.
 ================================================================================
 
  Answer: 
- The alternative name used for the Naive RAG process is the "Retrieve-Read" framework.
+ The Naive RAG process is also characterized as a “Retrieve-Read” framework.
 
 Ground truth:
   The 'Retrieve-Read' framework.
@@ -1220,7 +1220,7 @@ ment, attracting interest from academic and industrial sectors.
 ================================================================================
 
  Answer: 
- "I don't have enough information in the provided documents to answer that."
+ I don't have enough information in the provided documents to answer that.
 
 Ground truth:
   LLMs tend to focus mainly on the beginning and end of long input texts while forgetting or underusing information in the middle portion.
@@ -1411,6 +1411,32 @@ centrate on selecting the essential information, emphasizing
 critical sections, and shortening the context to be processed.
 
  ---chunk 7 ---
+ Developing new RAG methods in the context of
+super-long contexts is one of the future research trends.
+B. RAG Robustness
+The presence of noise or contradictory information during
+retrieval can detrimentally affect RAG’s output quality. This
+situation is figuratively referred to as “Misinformation can
+be worse than no information at all”. Improving RAG’s
+resistance to such adversarial or counterfactual inputs is gain-
+ing research momentum and has become a key performance
+metric [48], [50], [82]. Cuconasu et al. [54] analyze which
+type of documents should be retrieved, evaluate the relevance
+of the documents to the prompt, their position, and the
+number included in the context. The research findings reveal
+that including irrelevant documents can unexpectedly increase
+accuracy by over 30%, contradicting the initial assumption
+of reduced quality. These results underscore the importance
+of developing specialized strategies to integrate retrieval with
+language generation models, highlighting the need for further
+research and exploration into the robustness of RAG.
+C. Hybrid Approaches
+Combining RAG with fine-tuning is emerging as a leading
+strategy. Determining the optimal integration of RAG and
+fine-tuning whether sequential, alternating, or through end-to-
+end joint training—and how to harness both parameterized
+
+ ---chunk 8 ---
  Figure 4: Heatmap showing Jaccard index values between candidate chunk-sets sampled at different λ. Darker color
 represents more common chunks between the corresponding chunk-sets.
 introduces on average of about 40% unique infor-
@@ -1457,38 +1483,12 @@ erate an answer, retrieval complexity can become
 a bottleneck when operating over very large cor-
 pora or databases.
 
- ---chunk 8 ---
- Developing new RAG methods in the context of
-super-long contexts is one of the future research trends.
-B. RAG Robustness
-The presence of noise or contradictory information during
-retrieval can detrimentally affect RAG’s output quality. This
-situation is figuratively referred to as “Misinformation can
-be worse than no information at all”. Improving RAG’s
-resistance to such adversarial or counterfactual inputs is gain-
-ing research momentum and has become a key performance
-metric [48], [50], [82]. Cuconasu et al. [54] analyze which
-type of documents should be retrieved, evaluate the relevance
-of the documents to the prompt, their position, and the
-number included in the context. The research findings reveal
-that including irrelevant documents can unexpectedly increase
-accuracy by over 30%, contradicting the initial assumption
-of reduced quality. These results underscore the importance
-of developing specialized strategies to integrate retrieval with
-language generation models, highlighting the need for further
-research and exploration into the robustness of RAG.
-C. Hybrid Approaches
-Combining RAG with fine-tuning is emerging as a leading
-strategy. Determining the optimal integration of RAG and
-fine-tuning whether sequential, alternating, or through end-to-
-end joint training—and how to harness both parameterized
-
 ================================================================================
 [q06] Name two adaptive retrieval methods discussed in the RAG survey.
 ================================================================================
 
  Answer: 
- Flare and Self-RAG.
+ Flare and Self-RAG are two adaptive retrieval methods discussed in the RAG survey.
 
 Ground truth:
   FLARE and Self-RAG.
@@ -2278,7 +2278,7 @@ Fixed gMMR by ∼6 −16%.
 ================================================================================
 
  Answer: 
- "I don't have enough information in the provided documents to answer that."
+ I don't have enough information in the provided documents to answer that.
 
 Ground truth:
   Diversity-Focused Retrieval-Augmented Generation.
@@ -2548,7 +2548,7 @@ performance.
 ================================================================================
 
  Answer: 
- DF-RAG's gMMR function builds upon the diversity-focused retrieval technique known as MMR (Maximal Marginal Relevance).
+ DF-RAG's gMMR function builds upon the diversity-focused retrieval function based on MMR (Maximum Marginal Relevance).
 
 Ground truth:
   Maximal Marginal Relevance (MMR).
@@ -2997,7 +2997,7 @@ LLMs.
 ================================================================================
 
  Answer: 
- The hyperparameter λ controls the trade-off between relevance and diversity in DF-RAG's gMMR scoring function.
+ The hyperparameter λ modulates the trade-off between relevance and diversity in DF-RAG's gMMR scoring function.
 
 Ground truth:
   Lambda (λ).
@@ -3381,7 +3381,7 @@ of successfully picking the right λ for each query
 ================================================================================
 
  Answer: 
- The two backbone LLMs used in DF-RAG's experiments are Qwen and Llama.
+ Qwen and Llama.
 
 Ground truth:
   Qwen 2.5 72B and Llama 3.3 70B.
@@ -3719,7 +3719,7 @@ we observe that even a small λ increment of 0.1
 ================================================================================
 
  Answer: 
- The five QA datasets used to evaluate DF-RAG are HotpotQA, MuSiQue, 2WikiMultihopQA, MultifieldQA, and En.QA.
+ The five QA datasets used to evaluate DF-RAG are HotpotQA, MuSiQue, 2WikiMultihopQA, MultifieldQA (English version), and En.QA.
 
 Ground truth:
   HotpotQA, MuSiQue, 2WikiMultihopQA, MultifieldQA (English), and En.QA.
@@ -4371,7 +4371,7 @@ other baselines.
 ================================================================================
 
  Answer: 
- The core architectural innovation of Landmark Embedding is the development of a model architecture that eliminates the need for chunking, enabling the generation of embeddings for fine-grained input units like sentences based on a coherent long context. This architecture incorporates special tokens known as landmarks (LMK), which are placed at the end of each sentence. By utilizing an LLM-based encoder to process the landmarked long context collectively, the model can produce highly discriminative representations of each sentence while maintaining contextual coherence.
+ The core architectural innovation of Landmark Embedding is the introduction of a model architecture that effectively partitions long-sequence inputs into manageable chunks. This allows for the generation of embeddings for fine-grained input units, such as sentences, based on a coherent long context. The architecture employs special tokens, known as landmarks (LMK), which are positioned at the end of each sentence, and utilizes an LLM-based encoder to jointly process the landmarked long context, enhancing the retrieval of useful chunks based on embedding similarity.
 
 Ground truth:
   A chunking-free architecture that appends a special landmark (LMK) token to the end of each sentence and jointly encodes it with the coherent surrounding context, instead of splitting text into disconnected chunks.
@@ -5082,9 +5082,9 @@ in comparison with other baseline retrievers.
 
  Answer: 
  The three stages of Landmark Embedding's multi-stage learning algorithm are: 
-1) Distant supervision over pairwise data,
-2) Weak supervision over noisy long-context data generated by rules,
-3) Fine-tuning over high-quality long-context data synthesized by LLMs.
+1) Distant supervision.
+2) Weak supervision.
+3) Fine-tuning.
 
 Ground truth:
   1) Distant supervision using pairwise MS MARCO data, 2) weak supervision using shuffled and merged pseudo long documents, and 3) fine-tuning on synthetic long-document data generated with an LLM.
@@ -5450,7 +5450,7 @@ any fine-tuning and minimal perplexity degradation.
 ================================================================================
 
  Answer: 
- Landmark Embedding utilizes a chunking-free model architecture that maintains coherence in long contexts, enabling the generation of embeddings for fine-grained input units like sentences. This approach allows for the processing of arbitrary long contexts through stream processing, effectively overcoming the limitations of the LLM's context window.
+ The new architecture utilizes a set of special tokens known as landmarks (LMK), which are placed at the end of each sentence. It leverages an LLM-based encoder to process the landmarked long context collectively. This approach allows for a rich perception of contextual information, resulting in highly discriminative representations for each sentence, significantly enhancing the quality compared to traditional sentence embeddings derived from chunked contexts. Additionally, the architecture employs a sliding window mechanism, enabling the generation of landmark embeddings for contexts of arbitrary length through stream processing.
 
 Ground truth:
   A sliding window that streams and processes the long context incrementally.
@@ -5805,7 +5805,7 @@ will be made publicly available1.
 ================================================================================
 
  Answer: 
- The Tie-Breaking Gate in DF-RAG's Evaluator is responsible for selecting one chunk set from a group of tied candidates when multiple λs are found to be equally optimal for a specific query. This selection is essential due to the constraints on context length that the system imposes. The tie-breaking process involves choosing the median λ (or the upper median if there is an even number of tied values) from the candidates.
+ The Tie-Breaking Gate in DF-RAG's Evaluator is responsible for selecting one chunk set from a group of tied candidates when multiple λs are found to be equally optimal for a specific query. This selection is essential due to the constraints on context length that the system imposes. The tie-breaking mechanism functions by choosing the median λ (or the upper median if there is an even number of selected values) from the tied candidates.
 
 Ground truth:
   When the Evaluator scores multiple lambda values as equally optimal, the Tie-Breaking Gate selects a single chunk set by choosing the median (or upper median) lambda among the tied candidates.
