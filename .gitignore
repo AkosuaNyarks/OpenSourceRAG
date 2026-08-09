@@ -6,3 +6,6 @@ __pycache__/
 chroma_db/
 .DS_Store
 **/.DS_Store
+db/
+data/open_ragbench/pdf/
+data/open_ragbench/meta/
