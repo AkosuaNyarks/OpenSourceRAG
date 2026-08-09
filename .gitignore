@@ -8,4 +8,4 @@ chroma_db/
 **/.DS_Store
 db/
 data/open_ragbench/pdf/
-data/open_ragbench/meta/
+data/open_ragbench/meta/data/uploads/
