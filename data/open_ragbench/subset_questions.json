@@ -1,0 +1,182 @@
+[
+  {
+    "question": "How do implementation shortfall (IS) and target close (TC) orders differ in trading strategies?",
+    "answer": "Implementation shortfall (IS) orders aim to execute trades at prices close to a pre-trade benchmark, minimizing costs relative to the market price at trade initiation. In contrast, target close (TC) orders focus on achieving prices near a post-trade benchmark, typically the closing price, which is crucial for index-fund managers who calculate net asset value once daily.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "How do SPX smiles vary with different maturities in financial modeling?",
+    "answer": "SPX smiles vary with different maturities by showing changes in implied volatility over time, which can be observed through bid/ask spreads and model calibrations at various time frames such as 7 days to 89 days.",
+    "doc_id": "2401.03345v2"
+  },
+  {
+    "question": "How do different volatility models compare over time when analyzing parameter $\\rho$?",
+    "answer": "Different volatility models, such as rough, path-dependent, and one-factor, show varying trends over time when analyzing parameter $\\rho$. Each model's performance can be observed through their respective time series graphs.",
+    "doc_id": "2401.03345v2"
+  },
+  {
+    "question": "What is an impossibility theorem in the context of voting methods?",
+    "answer": "An impossibility theorem in the context of voting methods demonstrates that no single ordinal voting method can satisfy all desired criteria simultaneously. In this case, it shows there is no method satisfying both positive involvement and certain Condorcet-related criteria along with resolvability and ordinal margin invariance.",
+    "doc_id": "2401.05657v5"
+  },
+  {
+    "question": "What are the key differences between implementation shortfall and target close trading strategies?",
+    "answer": "Implementation shortfall (IS) involves executing trades faster at the beginning and slowing down over time, while target close (TC) starts slowly and speeds up towards the end. Both converge to a Time-Weighted Average Price strategy as certain parameters approach zero.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "Is a second-order Taylor expansion needed to analyze the error of Taylor's expansion for ATM curvature?",
+    "answer": "Yes.",
+    "doc_id": "2401.03776v8"
+  },
+  {
+    "question": "What does the defensible set of a profile represent in voting methods?",
+    "answer": "The defensible set of a profile consists of alternatives such that for all other alternatives, there exists another alternative with at least as large a margin over them as they have over any member of the defensible set.",
+    "doc_id": "2401.05657v5"
+  },
+  {
+    "question": "What challenges do large position holders face when executing trades in financial markets?",
+    "answer": "Large position holders, such as pension funds or investment banks, face the challenge of managing significant market impact and transaction costs when executing trades. These trades need to be carefully planned to avoid substantial losses due to price impacts. Execution risk must be managed effectively to ensure that the overall profit and loss are not adversely affected.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "How do researchers study gene expression patterns during embryogenesis?",
+    "answer": "Researchers use high-resolution imaging techniques to capture the dynamic processes of gene expression during embryogenesis. These methods allow for the analysis of spatiotemporal outputs and help in understanding how enhancers regulate gene expression over time.",
+    "doc_id": "2401.02564v2"
+  },
+  {
+    "question": "What influences the ATM skew in the Edgeworth series?",
+    "answer": "The linear term $\\frac{k}{s}$ in the high-order Hermite polynomials influences the ATM skew.",
+    "doc_id": "2401.03776v8"
+  },
+  {
+    "question": "Why is it important to analyze short and long maturities in financial modeling?",
+    "answer": "Analyzing short and long maturities is important because it helps understand how different model parameters perform under various market conditions and time frames.",
+    "doc_id": "2401.03345v2"
+  },
+  {
+    "question": "What role does parameter $\\kappa$ play in shaping trading trajectories for IS and TC strategies?",
+    "answer": "The parameter $\\kappa$ determines how concave or convex the execution path is over time for both strategies. Different values of $\\kappa$ result in varying speeds of order execution throughout the trading period.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "Why are Condorcet winner and loser criteria significant in social choice theory?",
+    "answer": "Condorcet winner and loser criteria are significant because they ensure that if there is an option preferred by a majority over every other option (Condorcet winner) or less preferred than every other option (Condorcet loser), it should be selected as the outcome or avoided respectively.",
+    "doc_id": "2401.05657v5"
+  },
+  {
+    "question": "Do Minimax and Split Cycle methods satisfy positive involvement and the Condorcet winner criterion?",
+    "answer": "Yes.",
+    "doc_id": "2401.05657v5"
+  },
+  {
+    "question": "What is a reference strategy in order execution brokerage?",
+    "answer": "A reference strategy in order execution brokerage is a pre-specified benchmark strategy that can be represented by a deterministic function $\\left(R_{t}\\right)_{t \\in[0, T]}$ with $R_{0} \\equiv x_{0}$ and $R_{T} \\equiv A$.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "What is the purpose of using XGBoost in predicting cell distribution during Drosophila embryogenesis?",
+    "answer": "XGBoost is used to predict the future distribution of cells expressing the sog gene during Drosophila embryogenesis. It helps model how these cells are distributed along different axes by leveraging spatial point processes and Ripley's K-function, providing insights into gene expression control at a single molecule level.",
+    "doc_id": "2401.02564v2"
+  },
+  {
+    "question": "Why is a quadratic function used for approximating short-term implied volatility?",
+    "answer": "A quadratic function is used because it provides a simplified yet effective way to model the relationship between moneyness and implied volatility over short terms. This approximation allows for easier analysis and understanding of ATM skew and curvature behaviors.",
+    "doc_id": "2401.03776v8"
+  },
+  {
+    "question": "Why is stress testing important for financial strategies?",
+    "answer": "Stress testing evaluates how financial strategies perform under extreme market conditions. It helps identify potential vulnerabilities and ensures that a strategy can maintain its effectiveness even during challenging times, thereby demonstrating robustness.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "Can refinements of the defensible set violate positive involvement?",
+    "answer": "Yes, refinements of the defensible set may violate positive involvement.",
+    "doc_id": "2401.05657v5"
+  },
+  {
+    "question": "What is the axiom of positive involvement in voting methods?",
+    "answer": "The axiom of positive involvement in voting methods states that if a new voter is added to a preference profile and ranks an alternative uniquely first, this should not cause that alternative to change from winning to losing.",
+    "doc_id": "2401.05657v5"
+  },
+  {
+    "question": "What role do trading trajectories play in optimal order execution strategies?",
+    "answer": "Trading trajectories, particularly those subject to unit IS and TC orders, form a foundational basis for developing optimal trading strategies. These trajectories help structure the approach to executing trades efficiently under various reference strategies.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "How does grid size impact the performance of models used in super-resolution live movie analysis?",
+    "answer": "Smaller grid sizes resulted in lower RMSE and MAE, indicating better model performance. However, they posed classification challenges due to the average cell size being larger than the smallest grid size. A grid size of 62.5 was chosen for its balance between error metrics and practical application constraints.",
+    "doc_id": "2401.02564v2"
+  },
+  {
+    "question": "How does the Edgeworth expansion technique contribute to studying implied volatility surfaces?",
+    "answer": "The Edgeworth expansion technique is employed to analyze the at-the-money skew and curvature of implied volatility surfaces. It allows for a detailed examination of these features by expanding on traditional methods, offering a more nuanced understanding within various financial models.",
+    "doc_id": "2401.03776v8"
+  },
+  {
+    "question": "What are the different types of Bergomi models used for volatility calibration?",
+    "answer": "The different types of Bergomi models used for volatility calibration include Rough Bergomi, Path-dependent Bergomi, and One-factor Bergomi.",
+    "doc_id": "2401.03345v2"
+  },
+  {
+    "question": "Is there overshooting in the optimal strategy if \\( R < A - (x_0 - A)/(\\cosh(\\kappa T) -1)\\)?",
+    "answer": "Yes, if \\( R < A - (x_0 -A)/(\\cosh(\\kappa T) -1)\\), then the optimal strategy contains overshooting.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "How is live imaging used to analyze transcriptional dynamics?",
+    "answer": "Live imaging enables researchers to visualize and track RNA localization and expression in real-time using transgenic fly lines. This involves observing GFP signals associated with MS2 stem-loop reporter sequences, allowing for detailed analysis of transcriptional dynamics at a high temporal resolution.",
+    "doc_id": "2401.02564v2"
+  },
+  {
+    "question": "What role does invariance play in Condorcet-based voting systems?",
+    "answer": "Invariance ensures that the selection of winners depends solely on how majority margins are ordered by size, maintaining consistency regardless of how individual votes might vary within those constraints.",
+    "doc_id": "2401.05657v5"
+  },
+  {
+    "question": "How does the optimal investment strategy compare to the TWAP strategy in terms of risk and return?",
+    "answer": "The optimal investment strategy consistently achieves higher average terminal wealth and utility with lower variability compared to the TWAP strategy. The TWAP strategy shows a greater density in the tail regions of its distribution, indicating a higher likelihood of significant losses, which suggests inferior risk management.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "Why might observed roughness not reflect the true nature of spot volatility processes?",
+    "answer": "Observed roughness can arise from estimation errors rather than actual characteristics of the spot volatility process.",
+    "doc_id": "2401.03345v2"
+  },
+  {
+    "question": "Is the Riemann-Liouville fractional Brownian motion used in rough volatility models Markovian?",
+    "answer": "No, the Riemann-Liouville fractional Brownian motion used in rough volatility models is non-Markovian and not a semimartingale.",
+    "doc_id": "2401.03345v2"
+  },
+  {
+    "question": "What does a lower estimated Hurst index indicate about realized volatilities compared to theoretical spot volatilities?",
+    "answer": "A lower estimated Hurst index for realized volatilities compared to their theoretical spot counterparts suggests that observed roughness is primarily due to estimation errors rather than true characteristics of the underlying process.",
+    "doc_id": "2401.03345v2"
+  },
+  {
+    "question": "What impact do transaction costs have on aligning optimal trading strategies with reference strategies?",
+    "answer": "Higher transaction costs, denoted by \\(\\eta\\), cause the optimal strategy to align more closely with the TWAP strategy. This alignment helps minimize overall costs associated with executing trades.",
+    "doc_id": "2401.03305v2"
+  },
+  {
+    "question": "How does the new pipeline improve cell type identification in spatial transcriptomics?",
+    "answer": "The automated pipeline developed in this work significantly improves cell type discrimination by achieving high accuracy, allowing for more precise identification of different cell types within a given sample.",
+    "doc_id": "2401.02564v2"
+  },
+  {
+    "question": "Were the animal experiments approved by an ethics review board?",
+    "answer": "Yes, all animal experiments were approved by the UTA IACUC review board.",
+    "doc_id": "2401.02564v2"
+  },
+  {
+    "question": "How do cumulant-based conditions affect different types of volatility models?",
+    "answer": "The cumulant-based conditions are designed to be broad enough to encompass regular stochastic volatility models (SVMs), rough volatility models, and some distribution-based models. However, certain renowned distribution-based models do not meet these conditions without reparametrization.",
+    "doc_id": "2401.03776v8"
+  },
+  {
+    "question": "Does the feature extraction process precede dataset preparation for training?",
+    "answer": "Yes.",
+    "doc_id": "2401.02564v2"
+  }
+]
